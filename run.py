@@ -32,3 +32,9 @@ sub_df = sub_df.assign(inc_ratio = inc_ratio)
 
 # optional: Display as percentage
 sub_df['inc_ratio'] = pd.Series(["{0:.2f}%".format(val * 100) for val in sub_df['inc_ratio']], index = sub_df.index)
+
+
+# plot and save as image
+ax = sub_df.plot(x=sub_df.source_file, kind='bar')
+fig = ax.get_figure()
+fig.savefig('./foo.png')
