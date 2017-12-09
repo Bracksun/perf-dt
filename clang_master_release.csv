@@ -1,0 +1,9 @@
+module,source_file,time_consume
+bm,a.c,0.111
+bm,b.c,0.212
+bm,c.c,0.321
+coremark,f.c,0.1234
+coremark,e.c,1.233
+dhrystone,x.c,0.2345
+dhrystone,y.c,1.2312
+dhrystone,z.c,2.3123
